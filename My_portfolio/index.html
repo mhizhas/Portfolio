@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Page</title>
+    <link rel="stylesheet" href= "style.css">
+    <script src="https://kit.fontawesome.com/3c5ea02983.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo" alt="">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="openmenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="closemenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Back-end Developer</p>
+            <h1>Hi, I'm <span>Orpheus Manga</span> <br> From Zimbabwe</h1>
+        </div>
+    </div>
+</div>
+
+<!----about---->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My professional journey includes mentoring students in robotics competitions and managing vital records in Zimbabwe, where I honed my skills in problem-solving and community engagement. Recently, my experience volunteering at the African Food System Forum (AFSF) further fueled my passion for bridging the gap between technology and agriculture. At AFSF, I engaged with influential leaders and learned about innovative, climate-resilient strategies aimed at addressing food security across the continent. This experience reinforced my commitment to using Artificial Intelligence in agriculture. My mission is to develop an AI-oriented program that predicts pest and disease trends, ultimately enhancing agricultural productivity and sustainability. I believe that by leveraging technology, we can create innovative solutions that not only address immediate challenges but also pave the way for a resilient future in food systems.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience/Volunteering Activities</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Django Developer</span><br>Developing Web Applications and DataBase Management</li>
+                        <li><span>API Development</span><br>Develop RESTful APIs using Django REST Framework.</li>
+                        <li><span>User Authentication</span><br>Implement user authentication and authorization features.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Feb-March-2024</span><br>Volunteered for Robotics Training for schools in Rwanda for The First Lego League Competition.</li>
+                        <li><span>September-2024</span><br>Volunteered for Data Collector at Kigali Convention Center For Africa Food System Forum.</li>
+                        <li><span>June-Aug-2024</span><br>Part Time job as a Registrar At Gweru Provincial Offices For Birth Certification in Zimbabwe.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Backend Development By Meta Coursera</li>
+                        <li><span>2024-Present</span><br>Software Engineer At African Leadership University</li>
+                        <li><span>2024</span><br>Frontend Development Certification By Brainaics</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!------services------>
+<div id="services">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-regular fa-code"></i>
+            <h2>Back-end Developer</h2>
+            <p>As a backend developer, I build and maintain the server-side logic of web applications. I design and manage databases, develop APIs for front-end communication, and optimize performance. I also implement security measures, write tests to ensure functionality, and collaborate with front-end developers. Additionally, I handle deployment and maintenance, ensuring the backend runs smoothly to support a seamless user experience.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Frontend Developer</h2>
+            <p>As a front-end developer, I create the visual components of web applications that users interact with directly. I design and implement user interfaces using HTML, CSS, and JavaScript, ensuring they are responsive and accessible across devices. I collaborate with backend developers to integrate APIs, optimize performance for a smooth user experience, and conduct testing to identify and fix issues. My focus is on delivering engaging, user-friendly designs that enhance overall usability and aesthetics.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Python Developer</h2>
+            <p>As a Python programmer, I write and maintain code to develop software applications, scripts, and automation tools. I leverage Python's extensive libraries and frameworks to solve problems efficiently, whether in web development, data analysis, or machine learning. I focus on writing clean, maintainable code, debugging issues, and optimizing performance.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+</div>
+<!-------portfolio------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Achievements</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Meta Back-End Developer</h3>
+                    <p>As a backend developer, I build and maintain the server-side logic of web applications. My responsibilities include designing databases, developing APIs for data communication, and optimizing application performance.</p>
+                    <a href="#"><i class="fa-duotone fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Brainaics Professional Certificate</h3>
+                    <p>Fundamentals in Frontend Development with HTML, CSS, JavaScript</p>
+                    <a href="#"><i class="fa-duotone fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Founders Academy at ALX</h3>
+                    <p>Learnt the skills needed as an Entrepreneur with a foundational project that I have worked on.</p>
+                    <a href="#"><i class="fa-duotone fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------contact-------0-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>o.manga@alustudent.com</p>
+                <p><i class="fa-solid fa-phone"></i>+250792957530</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/mangaorpheus/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/orpheus-manga-13ab76290/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://x.com/orphe8164"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="images/Orpheus-Manga-Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required >
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <span><i class="fa-solid fa-heart"></i> Orpheus Manga</span> </p>
+    </div>
+</div>
+<script>
+    let tablinks = document.getElementsByClassName("tab-links")
+    let tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    const sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby_U9xCADPEuFbetH1WSOJkTMsmIN9pPlRyLNYs-lf5Dv7ZOS9oHkHDwgEnOgHTtxc5/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent successfully"
+                setTimeout(function (){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
